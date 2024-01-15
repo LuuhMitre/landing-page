@@ -10,20 +10,23 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
-                <a href="#">
+            <h1 onclick="getElementById('close-menu').checked=false;">
+                <a href="#home">
                     LOGO
                 </a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked=false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +34,7 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section-size">
+    <section id="home" class="intro main-bg section-size">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>January brings us firefox 85</h2>
@@ -40,13 +43,14 @@
                 </p>
             </div>  
             <div class="intro-img">
-                <img src="./assets/img/python-html-css.svg" alt="As logos do HTML, Python e CSS, com as respectivas legendas de cada tecnologia">
+                <img src="./assets/img/python-html-css.svg" alt="HTML, Python and CSS logo's, with the tecnology name as subtitle" />
             </div>
         </div>
     </section>
-    <section id="top3" class="white-bg section-size">
-        <div class="top3-content">
-            <h2>Top 3 jobs</h2>
+
+    <section id="intro" class="white-bg section-size">
+        <div class="main-content top3-content">
+            <h2>news coverage and some surprises</h2>
             <p>
                 The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.
             </p>
@@ -58,6 +62,174 @@
             </p>
         </div>
     </section>
+
+    <section id="top3" class="grid-top3 main-bg section-size">
+        <div class="main-content grid-top3-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-top3 white-bg section-size">
+        <div class="main-content grid-top3-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="ramdom image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="ramdom image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="ramdom image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="ramdom image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="ramdom image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="ramdom image from unsplash" />
+                </div>  
+        
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="grid-top3 main-bg section-size">
+        <div class="main-content grid-top3-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur aut sed odio vitae ipsum architecto temporibus molestias omnis minima impedit facilis laboriosam dolor id blanditiis, minus placeat eligendi.</p>
+                </article>  
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section-size">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>
+                The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. 
+            </p>
+            <p>
+                We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture.
+            </p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1Content 1</td>
+                            <td>Content 2Content 1</td>
+                            <td>Content 3Content 1</td>
+                            <td>Content 1Content 1</td>
+                            <td>Content 2Content 1</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section-size">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contact us</h2>
+                <p>
+                    To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing you support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete removal of Flash support from Firefox.
+                </p>
+            </div>  
+            <div class="intro-img">
+                <img src="./assets/img/contact_us.svg" alt="There's three contacts simbols, the first one is the location simbol, the second one is the e-mail simbol and the third one is the phone simbol. There's two women, the fist one's sitting with her back leaning against the e-mail's simbol using her cellphone. The second one's standing under the phone's simbol, also using her cellphone" />
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me:</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer" class="white-bg">
+        <p><a rel="nofollow" target="_blank" href="https://github.com/LuuhMitre">Feito com <span class="heart">♥</span> por  Luana Mitre</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#home">➤</a>
 
 </body>
 </html>
